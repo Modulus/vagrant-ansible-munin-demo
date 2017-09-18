@@ -1,0 +1,9 @@
+---
+  - name: Provision vagrant controller node
+    hosts: localhost
+    connection: local
+    become: true
+    gather_facts: False
+    tasks:
+      - name: Welcome message
+        command: echo 'Welcome my liege!'

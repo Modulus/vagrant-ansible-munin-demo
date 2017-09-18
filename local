@@ -1,0 +1,17 @@
+[all:vars]
+ansible_connection=ssh
+ansible_ssh_user=vagrant
+ansible_ssh_pass=vagrant
+
+[node1]
+192.168.13.102
+
+[node2]
+192.168.13.103
+
+[nodes:children]
+node1
+node2
+
+[controller]
+127.0.0.1 ansible_connection=local
