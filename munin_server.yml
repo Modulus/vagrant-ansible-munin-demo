@@ -1,0 +1,6 @@
+---
+  - hosts: controller
+    roles:
+      - infratest
+      - geerlingguy.munin
+      - jpnewman.apache

@@ -2,6 +2,9 @@
 ansible_connection=ssh
 ansible_ssh_user=vagrant
 ansible_ssh_pass=vagrant
+ansible_become=true
+remote_user=vagrant
+
 
 [node1]
 192.168.13.102
@@ -14,4 +17,7 @@ node1
 node2
 
 [controller]
+127.0.0.1 ansible_connection=local
+
+[server]
 127.0.0.1 ansible_connection=local

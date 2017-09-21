@@ -1,0 +1,9 @@
+---
+  - name: install python-pip
+    package:
+      name: python-pip
+      state: present
+
+  - name: pip install testinfra
+    pip:
+      name: testinfra
